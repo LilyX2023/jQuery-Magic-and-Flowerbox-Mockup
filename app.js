@@ -30,5 +30,17 @@ if (typeof jQuery == 'undefined'){
     
     $container.append($h2, $h3, $h4Pet, $h4Wand);
 
+    //Create an unordered list
+    const $ul = $('<ul></ul>').attr('storage','trunk')
+    //list items
+    const listItems = [
+        "butter beer",
+        "invisibility cloak (add a class of secret)",
+        "magic map (add a class of secret)",
+        "time turner (add a class of secret)",
+        "leash (for your pet, be sure to give this list element the same class as you gave your pet)",
+        "Bertie Bott's Every Flavor [Jelly] Beans."
+    ]
+    listItems.forEach()
 });
 
