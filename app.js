@@ -35,12 +35,22 @@ if (typeof jQuery == 'undefined'){
     //list items
     const listItems = [
         "butter beer",
-        "invisibility cloak (add a class of secret)",
-        "magic map (add a class of secret)",
-        "time turner (add a class of secret)",
-        "leash (for your pet, be sure to give this list element the same class as you gave your pet)",
-        "Bertie Bott's Every Flavor [Jelly] Beans."
+        "invisibility cloak",
+        "magic map",
+        "time turner",
+        "leash",
+        "Bertie Bott's Every Flavor [Jelly] Beans"
     ]
-    listItems.forEach()
+    listItems.forEach(listItem => {
+        const $li = $('<li>').text(listItem)
+        if (listItem === "invisibility cloak" || listItem === "magic map" || listItem === "time turner") {
+            $li.addClass('secret')
+        } else if (listItem === "leash") {
+            $li.addClass('pet')
+        }
+        $ul.append($li)
+    })
+    $("#container").append($ul)
+    
 });
 
