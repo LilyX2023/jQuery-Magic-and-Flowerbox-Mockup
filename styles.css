@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+
+.root{
+    --mainFont: 'Open Sans', sans-serif;
+    --titleFont: 'DM Sans', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    
+}
+
+main {
+    overflow: auto;
+    padding-bottom: 79px;
+}
+
+header {
+    width: 85%;
+    margin: 10px auto;
+}
+
+/* Nav Bar */
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #92b2ba;
+    color: white;
+}
+
+header nav div a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.75em;
+    font-weight: bold;
+    font-family: var(--titleFont)
+}
+
+/* The Hero */
+
+#hero{
+    height: 400px;
+    background-image: url("https://floristssupply.com/wp-content/uploads/Fresh-Wholesale-Flowers-Slider-5.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px auto;
+}
+
+#hero #one {
+    font-family: var(--titleFont);
+    position: relative;
+    color: white;
+    font-size: 60px;
+    top: 230px;
+    left: 20px;
+}
+
+#hero #two {
+    font-family: var(--mainFont);
+    position: relative;
+    font-size: 15px;
+    top: 230px;
+    left: 21px;
+    display: inline-block;
+    background-color: whitesmoke;
+}
+
+/* Flower cards */
+
+#cards {
+    display: flex;
+    justify-content: space-around;
+    width: 88%;
+    margin: 10px auto;
+    flex-wrap: wrap;
+
+}
+.card{
+    width: 30%;
+    height: 450px;
+    background-color: blue;
+    margin: 30px 0px;
+    font-display: center;
+}
+
+.card h3 {
+    height: 100px;
+    position: relative;
+    text-align: center;
+    font-family: var(--mainFont);
+    font-size: 18px;
+    top: 400px;
+    background-color: #92b2ba;
+
+}
+
+.three {
+    background-image: url("https://www.mybaskets.ca/cdn/shop/files/ooh-la-la-flower-bouquet_689fff36-693f-40bb-8d79-780632a4bebf_1024x.jpg?v=1686257365");
+    background-attachment: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.four {
+    background-image: url("https://i.pinimg.com/736x/b6/f4/ab/b6f4abe4ebb7b49cffd00a0db1700dc2.jpg");
+    background-attachment: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.five {
+    background-image: url("https://i.pinimg.com/736x/f8/bf/17/f8bf17937131687e78bae66dc9665e79.jpg");
+    background-attachment: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.six {
+    background-image: url("https://www.thinkblooms.com.au/cdn/shop/products/87B11DD5-7FBB-4608-838C-0A1F42BA2BA4_900x.jpg?v=1676419971");
+    background-attachment: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.seven {
+    background-image: url("https://i.pinimg.com/736x/48/80/c0/4880c0d4e2da58a5da8d7066e294599e.jpg");
+    background-attachment: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.eight {
+    background-image: url("https://i.pinimg.com/736x/27/4a/01/274a01a60c3d5728ffa688440ca41b19.jpg");
+    background-attachment: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nine {
+    background-image: url("https://i.pinimg.com/736x/fb/50/8a/fb508a432e3f2bc32d8dc57658ca5438.jpg");
+    background-attachment: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ten {
+    background-image: url("https://i.pinimg.com/736x/7b/10/6b/7b106b46148d7cab721bfefde9845637.jpg");
+    background-attachment: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.eleven {
+    background-image: url("https://i.pinimg.com/736x/59/9e/b1/599eb19a3b50b21081efc883c129942e.jpg");
+    background-attachment: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.buttons {
+    font-size: 20px;
+    text-align: right;
+    padding: 10px;
+    position: relative;
+    top: 320px;
+}
+
+footer {
+    position: center;
+    width: 100%;
+    background-color: lightgrey;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px; 
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: #92b2ba;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    background-color: #92b2ba;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin:30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition:0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity:1;
+}
+
+.footerBottom{
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
