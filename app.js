@@ -130,6 +130,16 @@ if (typeof jQuery == 'undefined'){
     // Fix your pet's leash by removing the class 'cabbage'
     $('.cabbage').css('color', '')
     $item5.removeClass('cabbage')
+
+    //Update your class schedule to read 'Fall 2018'
+    $('h5').text('Fall 2018')
+    //Celebrate by buying more butter beer! Append a list item with the text 'Butter beer' as the first list item inside your unordered list with the value of trunk
+    $('<li>').text('Butter beer').prependTo('ul[storage="trunk"]')
+    //Whoops! You broke your trunk when you stood on it while singing karaoke. Get a new storage container for your stuff; replace the unodered list's property of trunk with a new property of chest
+    $('ul[storage="trunk"]').attr('storage', 'chest')
+    //Add some CSS to your page. Feel free to experiment and make this page your own
+    $container.css('background-color', 'lightpink')
+    // Take a screenshot of your page and add it to your homework folder
     
 });
 
