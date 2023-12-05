@@ -41,6 +41,7 @@ if (typeof jQuery == 'undefined'){
         "leash",
         "Bertie Bott's Every Flavor [Jelly] Beans"
     ]
+    //add class to certain items
     listItems.forEach(listItem => {
         const $li = $('<li>').text(listItem)
         if (listItem === "invisibility cloak" || listItem === "magic map" || listItem === "time turner") {
@@ -50,7 +51,60 @@ if (typeof jQuery == 'undefined'){
         }
         $ul.append($li)
     })
-    $("#container").append($ul)
+    $container.append($ul)
+
+    //Create h5
+    $('<h5></h5>').text('Spring 2017').appendTo($container)
+
+    
+    // Create a table
+    const $table = $('<table>');
+    $container.append($table);
+
+    // Create thead
+    const $thead = $('<thead>').appendTo($table);
+
+    //Add two th elements
+    $('<th>').text('Day').appendTo($thead);
+    $('<th>').text('Classes').appendTo($thead);
+    
+    // Add classes
+    const classList = [
+        { day: 'Monday', 
+            classes: ['Potions', 'Transfiguration']
+        },
+          {
+            day: 'Tuesday',
+            classes: ['Defense Against the Dark Arts', 'Charms']
+          },
+          {
+            day: 'Wednesday',
+            classes: ['Herbology', 'Divination']
+          },
+          {
+            day: 'Thursday',
+            classes: ['Ancient Runes', 'Care of Magical Creatures']
+          },
+          {
+            day: 'Friday',
+            classes: ['Astronomy', 'History of Magic']
+          }
+        ];
+    
+
+    //Create tbody
+    const $tableB = $('<tbody>').appendTo($table);
+
+    // Create tr and td
+    $(classList).each(function (index, el) {
+        const $tr = $('<tr>').appendTo($tableB);
+        $('<td>').text(el.day).appendTo($tr);
+        $('<td>').text(el.classes).appendTo($tr);
+    
+    });
+    
+    $h4Wand.remove()
+
     
 });
 

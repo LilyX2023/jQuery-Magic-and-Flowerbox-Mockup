@@ -4,10 +4,19 @@ body {
     font-family: fantasy;
     .secret {
         opacity: 0.5;
-    }
-    
-}/*or any color of your choosing*/
+    };
 
+}/*or any color of your choosing*/
 ul {
     list-style-type: none;
+}
+
+
+table, th, td {
+    border: 2px solid gray;
+}
+
+/* Center the table on the page */
+table {
+    margin: auto;
 }
