@@ -88,7 +88,6 @@ if (typeof jQuery == 'undefined'){
             classes: ['Astronomy', 'History of Magic']
           }
         ];
-    
 
     //Create tbody
     const $tableB = $('<tbody>').appendTo($table)
@@ -115,5 +114,22 @@ if (typeof jQuery == 'undefined'){
     $spy.appendTo($secretPlace)
     //Have your pet come back (remove your pet from the DOM, put it back in its original location)
     $spy.detach().appendTo($container).insertBefore($h3)
+
+    
+    // Hide all belongings with a class of 'secret' and reveal all belongings with a class of 'secret' after a delay of 2 seconds
+    $('.secret').hide('slow').delay(2000).queue(function(next) {
+    $(this).show('slow')
+    next()
+    })
+    
+    // Add the class 'cabbage' to your pet's leash without replacing its original class
+    $item5.toggleClass('cabbage')
+    // Add the color attribute to elements with the class 'cabbage' in main.css or dynamically with jQuery
+    $('.cabbage').css('color', 'CHARTREUSE')
+
+    // Fix your pet's leash by removing the class 'cabbage'
+    $('.cabbage').css('color', '')
+    $item5.removeClass('cabbage')
+    
 });
 
